@@ -56,3 +56,66 @@
   <script src="script.js"></script>
 </body>
 </html>
+<main id="container">
+
+    <div class="card mpb" id="post-djavan">
+      <h2>🎤 Djavan</h2>
+      <p class="resumo">Ícone da MPB, mistura poesia, jazz e ritmos brasileiros...</p>
+      <div class="conteudo-completo" style="display: none;">
+        Ícone da MPB, mistura poesia, jazz e ritmos brasileiros com letras profundas e sofisticadas. Suas obras influenciaram gerações com harmonias complexas e melodias inesquecíveis.
+      </div>
+      <span>🌊 Harmonia • 🎶 Sensibilidade</span>
+      <div class="interacao">
+        <button class="btn-curtir" onclick="curtir('post-djavan')">❤️ <span class="likes">0</span></button>
+        <button class="btn-ler" onclick="abrirpost('🎤 Djavan', 'post-djavan')">Ler mais</button>
+      </div>
+    </div>
+
+    <div class="card mpb" id="post-rita">
+      <h2>💃 Rita Lee</h2>
+      <p class="resumo">Rainha do rock brasileiro com forte influência na MPB...</p>
+      <div class="conteudo-completo" style="display: none;">
+        Rainha do rock brasileiro com forte influência na MPB e cultura pop nacional. Uma das mulheres mais influentes da música brasileira, que revolucionou os palcos com sua irreverência.
+      </div>
+      <span>⚡ Rebeldia • 🎸 Inovação</span>
+      <div class="interacao">
+        <button class="btn-curtir" onclick="curtir('post-rita')">❤️ <span class="likes">0</span></button>
+        <button class="btn-ler" onclick="abrirpost('💃 Rita Lee', 'post-rita')">Ler mais</button>
+      </div>
+    </div>
+
+    <div class="card reggaeton" id="post-bunny">
+      <h2>🔥 Bad Bunny</h2>
+      <p class="resumo">Fenômeno global do reggaeton, trazendo inovação sonora...</p>
+      <div class="conteudo-completo" style="display: none;">
+        Fenômeno global do reggaeton, trazendo inovação sonora e estilo marcante. O artista que quebrou barreiras linguísticas e levou o ritmo urbano de Porto Rico para o topo das paradas mundiais.
+      </div>
+      <span>🌎 Global • 🎧 Beat urbano</span>
+      <div class="interacao">
+        <button class="btn-curtir" onclick="curtir('post-bunny')">❤️ <span class="likes">0</span></button>
+        <button class="btn-ler" onclick="abrirpost('🔥 Bad Bunny', 'post-bunny')">Ler mais</button>
+      </div>
+    </div>
+
+    <div class="card mpb" id="post-marisa">
+      <h2>🌙 Marisa Monte</h2>
+      <p class="resumo">Uma das vozes mais delicadas e poderosas da MPB...</p>
+      <div class="conteudo-completo" style="display: none;">
+        Uma das vozes mais delicadas e poderosas da MPB contemporânea. Conhecida por misturar o clássico e o moderno, seu repertório é repleto de sucessos atemporais e parcerias brilhantes.
+      </div>
+      <span>🎤 Emoção • 🌿 Sofisticação</span>
+      <div class="interacao">
+        <button class="btn-curtir" onclick="curtir('post-marisa')">❤️ <span class="likes">0</span></button>
+        <button class="btn-ler" onclick="abrirpost('🌙 Marisa Monte', 'post-marisa')">Ler mais</button>
+      </div>
+    </div>
+
+  </main>
+
+  <div id="modal-post" class="modal">
+    <div class="modal-conteudo">
+      <span class="fechar" onclick="fecharmodal()">&times;</span>
+      <h2 id="modal-titulo"></h2>
+      <p id="modal-texto"></p>
+    </div>
+  </div>
